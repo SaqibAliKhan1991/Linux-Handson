@@ -1,0 +1,8 @@
+Networking Basics: Networking is all about devices communicating over IP addresses, ports, and protocols. The commands you listed help you test connectivity, check interfaces, and monitor network activity.
+
+- Ping: Checks if a host is reachable and measures latency. e.g ping google.com
+- curl: Fetches data from URLs. Useful to check if a web server is up. e.g curl -I https://example.com. whereas -I shows just headers (status code, server info).
+- ifconfig: (deprecated on some systems) – Lists network interfaces and IPs. e.g ifconfig
+- ip addr:  Modern alternative to ifconfig. Shows IP addresses assigned to interfaces. e.g ip addr show
+- netstat: Shows active connections, listening ports, and routing tables. e.g netstat -tuln
+- ss: More modern version of netstat. Faster and more detailed. e.g ss-tuln
