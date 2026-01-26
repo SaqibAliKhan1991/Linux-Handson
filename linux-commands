@@ -78,4 +78,28 @@ sudo systemctl disable nginx   # disable at boot
 Note:Syntax is different between service and systemctl as below:
 for service: sudo service <service_name> <action>
 for systemctl: sudo systemctl <action> <service_name>
+
+Mini-project: Ensure nginx or apache is running, restart if stopped
+# Update packages
+sudo apt update
+sudo apt upgrade -y
+
+# Install nginx
+sudo apt install nginx -y
+
+# Start nginx
+sudo service nginx start
+
+# Check status
+sudo service nginx status
+
+# Stop nginx
+sudo service nginx stop
+
+# Restart nginx
+sudo service nginx restart
+
+# Optional: check logs
+sudo tail -f /var/log/nginx/error.log
+sudo tail -f /var/log/nginx/access.log
  
