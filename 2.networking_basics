@@ -6,3 +6,18 @@ Networking Basics: Networking is all about devices communicating over IP address
 - ip addr:  Modern alternative to ifconfig. Shows IP addresses assigned to interfaces. e.g ip addr show
 - netstat: Shows active connections, listening ports, and routing tables. e.g netstat -tuln
 - ss: More modern version of netstat. Faster and more detailed. e.g ss-tuln
+Netstat ("network statistics") is a command-line tool for monitoring network connections, routing tables, and interface statistics on Windows, Linux, and Unix systems. It diagnoses network issues by displaying active TCP/UDP ports, listening services, and PID (Process ID) information to identify which applications are using specific network resources. 
+Common Netstat Options and Commands:
+- netstat -a: Lists all active connections and listening ports.
+- netstat -n: Displays addresses and port numbers numerically, preventing slow DNS lookups.
+- netstat -o: Shows the owning process ID (PID) associated with each connection (Windows).
+- netstat -ano: A popular combination on Windows to list all active, numerical connections with their PIDs.
+- netstat -tulpn: Frequently used on Linux to show listening TCP/UDP ports, PIDs, and service names (requires sudo).
+- netstat -r: Displays the routing table.
+- netstat -s: Shows statistics for each protocol (e.g., TCP, UDP, ICMP). 
+Key Use Cases
+- Identifying Open Ports: Determine which services are listening for incoming traffic.
+- Troubleshooting Connections: View the state of connections (e.g., ESTABLISHED, LISTEN, TIME_WAIT).
+- Identifying Process Activity: Match a specific port to a process ID to see which application is using it, aiding in security and performance troubleshooting.
+- Network Statistics: View protocol-specific data to identify potential congestion or configuration issues. 
+On modern Linux systems, netstat is considered obsolete and is generally replaced by the ss command. 
