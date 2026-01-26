@@ -102,4 +102,10 @@ sudo service nginx restart
 # Optional: check logs
 sudo tail -f /var/log/nginx/error.log
 sudo tail -f /var/log/nginx/access.log
- 
+Test in browser
+
+Start nginx: sudo service nginx start
+
+Open Windows browser → http://localhost
+
+You should see “Welcome to nginx!” 
