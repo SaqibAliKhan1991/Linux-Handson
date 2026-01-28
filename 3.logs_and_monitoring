@@ -1,0 +1,38 @@
+# What is “Log Files & Monitoring”? 
+# Your computer writes messages about what it’s doing into log files.
+# These tools help you read those messages to see if something is working or broken.
+# Think of logs like a diary for your system.
+
+#Commands
+#1. journalctl: Shows system messages (errors, warnings, services starting/stopping).
+#journalctl: show system messages
+#journalctl -e: show newest messages first
+#journalctl -b: show messages from this boot only
+#journalctl -f: watch logs live
+#journalctl -u ssh : Logs for one service only (e.g ssh)
+
+#2. tail -f: Shows the latest lines of a log file and keeps updating live.
+# tail -f /var/log/syslog : Watch a log file update in real time:
+# tail -n 20 /var/log/syslog: Show last 20 lines only:
+# For stop watching: Ctrl + C
+
+#3. cat: Prints the whole file at once.
+# cat file.txt: shows everythign in a file (usually for small files)
+
+#4. less: Lets you scroll through a file slowly.
+# less /var/log/syslog: open a fileMove:
+
+# move
+# ↑ ↓ → line by line
+
+# Space → next page
+
+# b → previous page
+
+#Search: /error
+#exit: q
+
+
+#5. head: Shows the first few lines of a file.
+#head file.txt: (shows first 10 lines)
+# head -n 20 file.txt (shows first 20 lines)
