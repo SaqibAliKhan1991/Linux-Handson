@@ -55,7 +55,9 @@ Mini-project: Automate log backup using Python
 - Remove Software (sudo apt remove tree)
 
 2. Text Processing Tool (logs & files)
-- grep - search text: Used to find words inside files. (grep "error" logfile.txt)
+- grep - search text: Used to find words inside files. (grep "error" logfile.txt) 
+syntax: grep "ERROR" app.log > error_logs.txt
+
 - awk - column based processing: Used when files have columns (like logs). (awk '{print $1}' logfile.txt)
 - sed - edit text : Used to replace or modify text (sed 's/error/ERROR/' logfile.txt)
 
@@ -78,7 +80,6 @@ f = file
 
 - zip / unzip: When creating a zip : zip logs.zip *.log
 - Extract unzip : unzip logs.zip
-
 
 
 
