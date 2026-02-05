@@ -46,3 +46,75 @@ Project: Store all Bash scripts and projects in GitHub
 
 Running Bash commands from Python using subprocess
 Mini-project: Automate log backup using Python
+
+
+# Package Management & Linux Tools (Easy Mode)
+1. Package Management
+- Refresh List (sudo apt update)
+- Add Software (sudo apt install)
+- Remove Software (sudo apt remove tree)
+
+2. Text Processing Tool (logs & files)
+- grep - search text: Used to find words inside files. (grep "error" logfile.txt)
+- awk - column based processing: Used when files have columns (like logs). (awk '{print $1}' logfile.txt)
+- sed - edit text : Used to replace or modify text (sed 's/error/ERROR/' logfile.txt)
+
+3. Finding Files
+- find - search files by name/type (find . -name "*.log") 
+- For find logs inside /var/log (find /var/log -name "*.log")
+
+4. Compression Tools
+- tar (most common for logs): create archieve: tar -czf logs.tar.gz *.log 
+- Extract archieve: tar -xzf logs.tar.gz
+Explanation:
+
+c = create
+
+x = extract
+
+z = gzip
+
+f = file
+
+- zip / unzip: When creating a zip : zip logs.zip *.log
+- Extract unzip : unzip logs.zip
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
